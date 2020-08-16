@@ -1,0 +1,11 @@
+.b-header {
+  height: 135px;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    height: 220px;
+  }
+  @import "loginNav.scss";
+  @import "logoAndSlogan.scss";
+  @import "socials.scss";
+}

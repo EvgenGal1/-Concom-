@@ -1,0 +1,118 @@
+.b-footer {
+  background: #3b3b3b;
+  padding: 40px 30px;
+  color: $colorGray;
+
+  &__unit {
+    @include media-breakpoint-only(md) {
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-top: 30px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__unitContactDesc {
+    text-align: justify;
+
+    &_margin {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__unitTitle {
+    color: #666;
+    text-transform: uppercase;
+
+    &_margin {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__quickLinksWrap {
+  }
+
+  &__quickLink {
+    display: block;
+    color: inherit;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: $colorLimeade;
+    }
+
+    &_decor {
+      text-decoration: none;
+      border-bottom: 1px solid transparentize($colorGray, 0.8);
+      padding: 10px 0;
+    }
+  }
+
+  &__blogTitle {
+    font-weight: bold;
+  }
+
+  &__blogText {
+    text-align: justify;
+  }
+
+  &__blogMore {
+    color: $colorLimeade;
+    display: block;
+    text-align: right;
+    padding-top: 10px;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: $colorWhite;
+    }
+  }
+
+  &__newsletterForm {
+  }
+
+  &__newsletterInput {
+    display: block;
+    padding: 10px;
+    background: #1f1f1f;
+    color: $colorGray;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition-duration: 0.5s;
+
+    &:focus {
+      color: $colorLimeade;
+      box-shadow: 0 0 0 2px $colorLimeade;
+    }
+
+    &_margin {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__newsletterBtn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #1f1f1f;
+    color: $colorLimeade;
+    text-transform: uppercase;
+    outline: none;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: $colorWhite;
+      cursor: pointer;
+    }
+  }
+}
